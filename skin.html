@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width,target-densitydpi=medium-dpi">
+	<title>[##_page_title_##] - [##_title_##]</title>
+	<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./images/font.css">
+
+	<!--[if lt IE 9]>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<![endif]-->
+	<!--[if gte IE 9]><!-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!--<![endif]-->
+</head>
+
+<body>
+<s_t3>
+	<div id="dkIndex">
+		<!--웹접근성용 바로가기 링크 모음-->
+		<a href="#dkBody">본문 바로가기</a>
+		<a href="#dkGnb">메뉴 바로가기</a>
+	</div>
+	<div id="dkWrap" class="wrap_skin ">
+		<!-- 모바일의 경우, btn_menu 버튼 클릭시 layer_on 클래스 부여 -->
+		<!--position:relative 적용 / 레이아웃 관련 클래스 적용-->
+		<div id="dkHead" role="banner" class="area_head ">
+			<!-- 모바일의 경우, 스크롤시 lock_head 클래스 부여 -->
+			<h1 class="screen_out">[##_title_##]</h1>
+			<div class="area_profile ">
+				<!-- 네임 클릭시 'on' 클래스 부여 -->
+				<img src="[##_image_##]" width="50" height="50" class="img_profile" alt="프로필사진">
+				<!-- 임시이미지 -->
+				<button type="button" class="btn_name">[##_blogger_##]
+					<span class="ico_skin ico_name"></span>
+				</button>
+				<ul class="list_name">
+					<li><a href="[##_owner_url_##]/entry/post" class="link_name">글쓰기</a></li>
+					<li><a href="[##_owner_url_##]" class="link_name">관리</a></li>
+					<li class="box_division"><a href="[##_guestbook_link_##]" class="link_name">방명록</a></li>
+					<li><a href="#none" class="link_name">링크추가</a></li>
+					<li><a href="[##_rss_url_##]" class="link_name">RSS</a></li>
+				</ul>
+				<p class="txt_condition">[##_desc_##]</p>
+			</div>
+			<button type="button" class="btn_menu">
+				<span class="ico_skin ico_menu">카테고리 메뉴열기</span>
+			</button>
+			<div class="dimmed_layer"></div>
+			<div class="area_menu">
+				<s_search>
+					<div class="area_search">
+						<button type="button" class="btn_search">
+							<span class="ico_skin ico_search">검색하기</span>
+						</button>
+						<form action="#" method="get" class="frm_search" onsubmit="[##_search_onclick_submit_##]">
+							<fieldset>
+								<legend class="screen_out">검색하기 폼</legend>
+								<label for="tfSearch" class="ico_skin lab_search">검색하기</label>
+								<input type="text" name="[##_search_name_##]" value="[##_search_text_##]" class="tf_search">
+							</fieldset>
+						</form>
+					</div>
+				</s_search>
+
+				<div role="navigation" class="area_navi">
+					<button type="button" class="btn_cate">CATEGORY <span class="ico_skin ico_cate"></span></button>
+
+					<div class="list_cate">
+						[##_category_list_##]
+					</div>
+
+					<button type="button" class="btn_close">
+						<span class="ico_skin ico_close">닫기</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<hr class="hide">
+
+		<div id="dkContent" class="cont_skin" role="main">
+			<div id="cMain">
+				<s_article_rep>
+					<div id="mArticle" class="article_skin skin_view">
+						<h2 id="dkBody" class="screen_out">티스토리 뷰</h2>
+						<div class="area_title">
+							<strong class="tit_category"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></strong>
+							<h3 class="tit_post"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h3>
+							<span class="txt_detail my_post">[##_article_rep_author_##]
+								<span class="txt_bar"></span>[##_article_rep_date_##]
+								<s_ad_div>
+									<span class="my_edit">
+										<span class="txt_bar"></span><a href="[##_s_ad_m_link_##]" class="link_detail">수정</a>
+										<span class="txt_bar"></span><a href="#" onclick="[##_s_ad_s2_onclick_##]" class="link_detail">[##_s_ad_s1_label_##]</a>
+										<span class="txt_bar"></span><a href="#" onclick="[##_s_ad_d_onclick_##]" class="link_detail">삭제</a>
+									</span>
+								</s_ad_div>
+							</span>
+						</div>
+						<div class="area_view">
+							[##_article_rep_desc_##]
+						</div>
+						<div class="area_etc">
+							<s_tag_label>
+								<dl class="list_tag">
+									<dt class="tit_tag">TAG</dt>
+									<dd class="desc_tag">[##_tag_label_rep_##]</dd>
+								</dl>
+							</s_tag_label>
+
+							<strong class="screen_out">공유하기 링크</strong>
+							<ul class="list_share">
+								<li><a href="#none" class="ico_skin link_fb">페이스북</a></li>
+								<li><a href="#none" class="ico_skin link_kt">카카오톡</a></li>
+								<li><a href="#none" class="ico_skin link_ks">카카오스토리</a></li>
+								<li><a href="#none" class="ico_skin link_tw">트위터</a></li>
+							</ul>
+						</div>
+
+						<div class="area_other">
+							<strong class="tit_other">
+								<span class="emph_t"><a href="" class="link_cate">카메라 감성</a> &gt; <a href="#none" class="link_cate">미놀타 x-300</a></span> 카테고리의 다른 글</strong>
+							<ul class="list_other">
+								<!-- 모바일의 경우 5개줄 제한 및 하나의 리스트만 노출 -->
+								<li class="now_post"><a href="#none" class="link_other">퀸마마마켓:: 매뉴팩트커피</a>(54)</li>
+								<li><a href="#none" class="link_other">Sustain Life, 삼복 더위의 브런치 삼복 더위의 브런치 삼복 더위의 브런치</a>(97)</li>
+								<li><a href="#none" class="link_other">퀸마마마켓:: 매뉴팩트커피</a>(54)</li>
+								<li><a href="#none" class="link_other">Sustain Life, 삼복 더위의 브런치 삼복 더위의 브런치 삼복 더위의 브런치</a>(97)</li>
+								<li><a href="#none" class="link_other">Sustain Life, 삼복 더위의 브런치 삼복 더위의 브런치 삼복 더위의 브런치</a>(97)</li>
+								<li><a href="#none" class="link_other">퀸마마마켓:: 매뉴팩트커피</a>(54)</li>
+								<li><a href="#none" class="link_other">Sustain Life, 삼복 더위의 브런치 삼복 더위의 브런치 삼복 더위의 브런치</a>(97)</li>
+								<li><a href="#none" class="link_other">Sustain Life, 삼복 더위의 브런치 삼복 더위의 브런치 삼복 더위의 브런치</a>(97)</li>
+								<li><a href="#none" class="link_other">퀸마마마켓:: 매뉴팩트커피</a>(54)</li>
+								<li><a href="#none" class="link_other">Sustain Life, 삼복 더위의 브런치 삼복 더위의 브런치 삼복 더위의 브런치</a>(97)</li>
+							</ul>
+						</div>
+						<div class="area_reply ">
+							<strong class="tit_reply">댓글
+								<button type="button" class="btn_reply">150
+									<span class="ico_skin ico_reply">댓글펼치기</span>
+								</button>
+							</strong>
+							<!-- 대체텍스트 댓글펼치기/댓글접기 변경 -->
+							<button type="button" class="btn_replymore">이전 댓글 보기</button>
+							<ul class="list_reply">
+								<li>
+									<img src="images/temp.png" width="50" height="50" class="img_profile" alt="프로필사진">
+									<!-- 임시이미지 -->
+									<span class="reply_content">
+										<a href="#" class="tit_nickname">카페플로렌</a>
+										<span class="ico_skin ico_secret">비밀댓글</span>
+										<span class="txt_reply">카페가 깔끔하고 좋네요.. 파리 마레지구 Merci 편집샵 느낌도 나고 고급스럽군요^^ 시원시원한 공간의 카페가 눈에 들어 오네요~
+											<br> 햇볕이 들어오면 분위기 넘 좋을것 같아요~</span>
+										<span class="txt_date">2015.07.02 00:33</span>
+									</span>
+									<button type="button" class="btn_replymenu">
+										<span class="ico_skin ico_replymenu">댓글 메뉴</span>
+									</button>
+									<div class="my_edit">
+										<a href="#none" class="link_edit">댓글주소</a>
+										<a href="#none" class="link_edit">수정/삭제</a>
+										<a href="#none" class="link_edit">댓글쓰기</a>
+									</div>
+								</li>
+								<li class="my_reply on">
+									<!-- PC : li에 마우스 오버시 'on' 클래스 부여 / 공통 : 내댓글일때 'my_reply' -->
+									<img src="images/temp.png" width="50" height="50" class="img_profile" alt="프로필사진">
+									<!-- 임시이미지 -->
+									<span class="reply_content">
+										<a href="#none" class="tit_nickname">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+										<span class="txt_reply">카페가 깔끔하고 좋네요.. 파리 마레지구 Merci 편집샵 느낌도 나고 고급스럽군요^^ 시원시원한 공간의 카페가 눈에 들어 오네요~
+											<br> 햇볕이 들어오면 분위기 넘 좋을것 같아요~</span>
+										<span class="txt_date">2015.07.02 00:33</span>
+									</span>
+									<button type="button" class="btn_replymenu">
+										<span class="ico_skin ico_replymenu">댓글 메뉴</span>
+									</button>
+									<div class="my_edit">
+										<a href="#none" class="link_edit">댓글주소</a>
+										<a href="#none" class="link_edit">수정/삭제</a>
+										<a href="#none" class="link_edit">댓글쓰기</a>
+									</div>
+								</li>
+								<li class="prev_reply">
+									<!-- 모바일의 경우 해당덧글에 덧글이 달릴경우 prev_reply 클래스 부여 -->
+									<img src="images/temp.png" width="50" height="50" class="img_profile" alt="프로필사진">
+									<!-- 임시이미지 -->
+									<span class="reply_content">
+										<a href="#none" class="tit_nickname">그것은알기싫다</a>
+										<span class="txt_reply">카페가 깔끔하고 좋네요.. 파리 마레지구 Merci 편집샵 느낌도 나고 고급스럽군요^^ 시원시원한 공간의 카페가 눈에 들어 오네요~</span>
+										<span class="txt_date">2015.07.02 00:33</span>
+									</span>
+									<button type="button" class="btn_replymenu">
+										<span class="ico_skin ico_replymenu">댓글 메뉴</span>
+									</button>
+									<div class="my_edit">
+										<a href="#none" class="link_edit">댓글주소</a>
+										<a href="#none" class="link_edit">수정/삭제</a>
+										<a href="#none" class="link_edit">댓글쓰기</a>
+									</div>
+								</li>
+								<li class="re_reply">
+									<!-- 댓글의 댓글일 경우 re_reply 클래스 부여 -->
+									<img src="images/temp.png" width="50" height="50" class="img_profile" alt="프로필사진">
+									<!-- 임시이미지 -->
+									<span class="reply_content">
+										<a href="#none" class="tit_nickname">몽마르뜨언덕</a>
+										<span class="txt_reply">카페가 깔끔하고 좋네요.. 파리 마레지구 Merci 편집샵 느낌도 나고 고급스럽군요^^ 시원시원한 공간의 카페가 눈에 들어 오네요~ 시원시원한 공간의 카페가 눈에 들어 오네요~</span>
+										<span class="txt_date">2015.07.02 00:33</span>
+									</span>
+									<button type="button" class="btn_replymenu">
+										<span class="ico_skin ico_replymenu">댓글 메뉴</span>
+									</button>
+									<div class="my_edit">
+										<a href="#none" class="link_edit">댓글주소</a>
+										<a href="#none" class="link_edit">수정/삭제</a>
+										<a href="#none" class="link_edit">댓글쓰기</a>
+									</div>
+								</li>
+								<li class="reply_secret">
+									<img src="images/img_secret.gif" width="50" height="50" class="img_profile" alt="프로필사진">
+									<!-- 임시이미지 -->
+									<span class="reply_content">
+										<span class="tit_nickname">비밀댓글</span>
+										<span class="txt_date">2015.07.02 00:33</span>
+									</span>
+									<button type="button" class="btn_replymenu">
+										<span class="ico_skin ico_replymenu">댓글 메뉴</span>
+									</button>
+									<div class="my_edit">
+										<a href="#none" class="link_edit">댓글주소</a>
+										<a href="#none" class="link_edit">수정/삭제</a>
+										<a href="#none" class="link_edit">댓글쓰기</a>
+									</div>
+								</li>
+							</ul>
+							<form action="#" method="post">
+								<fieldset class="fld_reply">
+									<legend class="screen_out">댓글쓰기 폼</legend>
+									<div class="reply_write ">
+										<!-- 클릭시 'on_box' 추가 -->
+										<textarea name="txtReply" id="txtReply" class="tf_reply"></textarea>
+										<label for="txtReply" class="lab_write">여러분의 소중한 댓글을 입력해주세요</label>
+									</div>
+									<div class="reply_writer">
+										<div class="writer_info">
+											<span class="info_name ">
+												<!-- 클릭시 'on_box' 추가 -->
+												<label for="txtName" class="lab_info">이름</label>
+												<span class="wrap_info">
+													<input type="text" name="txtName" id="txtName" class="inp_info">
+												</span>
+											</span>
+											<span class="info_pw ">
+												<!-- 클릭시 'on_box' 추가 -->
+												<label for="txtPw" class="lab_info">비밀번호</label>
+												<span class="wrap_info">
+													<input type="password" name="txtPw" id="txtPw" class="inp_info">
+												</span>
+											</span>
+										</div>
+										<div class="writer_check">
+											<span class="check_secret ">
+												<!-- 체크시 'on'클래스 추가 -->
+												<input type="checkbox" name="checkSecret" id="checkSecret" class="inp_secret">
+												<label for="checkSecret" class="lab_secret">
+													<span class="ico_skin ico_check"></span>
+													<!-- 포커스 시 class 'ico_focused' 추가 -->비밀글
+												</label>
+											</span>
+											<button type="submit" class="btn_enter">입력</button>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="area_paging">
+							<span class="inner_paging">
+								<span class="ico_skin ico_prev">이전</span>
+								<!-- 비활성화일때 span태그 클래스 'ico_prev' / 활성화일때 클래스 'link_prev' -->
+								<span class="link_page now_page">1</span>
+								<!-- 현재페이지일때 클래스 'now_page' 추가 -->
+								<a href="#none" class="link_page">2</a>
+								<a href="#none" class="link_page">3</a>
+								<a href="#none" class="link_page">4</a>
+								<a href="#none" class="link_page">5</a>
+								<a href="#none" class="link_page">6</a>
+								<a href="#none" class="link_page">7</a>
+								<span class="txt_dot">..</span>
+								<a href="#none" class="link_page">125</a>
+								<a href="#none" class="ico_skin link_next">다음</a>
+								<!-- 비활성화일때 span태그 클래스 'ico_next' / 활성화일때 클래스 'link_next' -->
+							</span>
+						</div>
+					</div>
+				</s_article_rep>
+
+
+				<div id="mEtc" class="wrap_etc">
+					<div class="inner_aside">
+						<div class="box_aside">
+							<strong>공지사항</strong>
+							<ul class="list_board">
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+							</ul>
+						</div>
+						<div class="box_aside">
+							<strong>최근에 올라온 글</strong>
+							<ul class="list_board">
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+							</ul>
+						</div>
+						<div class="box_aside">
+							<strong>최근에 달린 댓글</strong>
+							<ul class="list_board">
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+							</ul>
+						</div>
+						<div class="box_aside lst">
+							<dl class="list_total">
+								<dt>Total</dt>
+								<dd>20,749,160</dd>
+							</dl>
+							<dl class="list_visitor">
+								<dt>Today</dt>
+								<dd>28,428</dd>
+							</dl>
+							<dl class="list_visitor">
+								<dt>Yesterday</dt>
+								<dd>14,448</dd>
+							</dl>
+						</div>
+						<div class="box_aside">
+							<strong>링크</strong>
+							<ul class="list_board">
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+								<li><a href="#none" class="link_board">남자들은 자꾸 나를 가르치려 든리리리리리</a></li>
+							</ul>
+						</div>
+						<div class="box_aside">
+							<strong>TAG</strong>
+							<ul class="list_tag">
+								<li><a href="#none" class="link_tag">여행</a></li>
+								<li><a href="#none" class="link_tag">이탈리아</a></li>
+								<li><a href="#none" class="link_tag">카메라</a></li>
+								<li><a href="#none" class="link_tag">손뜨개강의</a></li>
+								<li><a href="#none" class="link_tag">떡볶이감별사</a></li>
+								<li><a href="#none" class="link_tag">떡볶이감별사</a></li>
+								<li><a href="#none" class="link_tag">꽃꽂이</a></li>
+								<li><a href="#none" class="link_tag">꿈</a></li>
+							</ul>
+							<a href="#none" class="link_more">more</a>
+						</div>
+						<div class="box_aside">
+							<div class="month_calendar">
+								<button type="button" class="btn_prev">
+									<span class="ico_skin ico_prev">이전달</span>
+								</button>
+								2015 / 09
+								<button type="button" class="btn_next">
+									<span class="ico_skin ico_next">다음달</span>
+								</button>
+							</div>
+							<table class="tbl tbl_calendar">
+								<caption class="screen_out">달력 표</caption>
+								<colgroup>
+									<col class="col_day">
+										<col class="col_day">
+											<col class="col_day">
+												<col class="col_day">
+													<col class="col_day">
+														<col class="col_day">
+															<col class="col_day">
+								</colgroup>
+								<thead>
+									<tr>
+										<th class="tit_week">일</th>
+										<th class="tit_week">월</th>
+										<th class="tit_week">화</th>
+										<th class="tit_week">수</th>
+										<th class="tit_week">목</th>
+										<th class="tit_week">금</th>
+										<th class="tit_week">토</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<a href="#none" class="link_day"></a>
+										</td>
+										<td><a href="#none" class="link_day">1</a></td>
+										<td><a href="#none" class="link_day">2</a></td>
+										<td><a href="#none" class="link_day">3</a></td>
+										<td><a href="#none" class="link_day">4</a></td>
+										<td><a href="#none" class="link_day">5</a></td>
+										<td><a href="#none" class="link_day">6</a></td>
+									</tr>
+									<tr>
+										<td><a href="#none" class="link_day">7</a></td>
+										<td><a href="#none" class="link_day">8</a></td>
+										<td><a href="#none" class="link_day">9</a></td>
+										<td><a href="#none" class="link_day day_event">10</a></td>
+										<td><a href="#none" class="link_day">11</a></td>
+										<td><a href="#none" class="link_day">12</a></td>
+										<td><a href="#none" class="link_day">13</a></td>
+									</tr>
+									<tr>
+										<td><a href="#none" class="link_day day_event">14</a></td>
+										<td><a href="#none" class="link_day">15</a></td>
+										<td><a href="#none" class="link_day">16</a></td>
+										<td><a href="#none" class="link_day">17</a></td>
+										<td><a href="#none" class="link_day">18</a></td>
+										<td><a href="#none" class="link_day">19</a></td>
+										<td><a href="#none" class="link_day">20</a></td>
+									</tr>
+									<tr>
+										<td><a href="#none" class="link_day">21</a></td>
+										<td><a href="#none" class="link_day">22</a></td>
+										<td><a href="#none" class="link_day">23</a></td>
+										<td><a href="#none" class="link_day">24</a></td>
+										<td><a href="#none" class="link_day">25</a></td>
+										<td><a href="#none" class="link_day">26</a></td>
+										<td><a href="#none" class="link_day">27</a></td>
+									</tr>
+									<tr>
+										<td><a href="#none" class="link_day">28</a></td>
+										<td><a href="#none" class="link_day">29</a></td>
+										<td><a href="#none" class="link_day">30</a></td>
+										<td>
+											<a href="#none" class="link_day"></a>
+										</td>
+										<td>
+											<a href="#none" class="link_day"></a>
+										</td>
+										<td>
+											<a href="#none" class="link_day"></a>
+										</td>
+										<td>
+											<a href="#none" class="link_day"></a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="box_aside lst">
+							<strong>글 보관함</strong>
+							<ul class="list_keep">
+								<li><a href="#none" class="link_keep">2015/01</a> (24)</li>
+								<li><a href="#none" class="link_keep">2015/01</a> (24)</li>
+								<li><a href="#none" class="link_keep">2015/01</a> (24)</li>
+								<li><a href="#none" class="link_keep">2015/01</a> (24)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="hide">
+		<div id="dkFoot" role="contentinfo" class="area_foot">
+			Blog is powered by
+			<em class="emph_t">daumkakao</em> / Designed by
+			<em class="emph_t">Tistory</em>
+		</div>
+	</div>
+</s_t3>
+
+<script src="./images/script.js"></script>
+
+</body>
+
+</html>
