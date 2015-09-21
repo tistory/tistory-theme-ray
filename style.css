@@ -12,7 +12,7 @@ body {background:#fff}
 body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Noto Sans demilight', sans-serif;color:#666} /* color값은 디자인가이드에 맞게사용 */
 a {color:#333;text-decoration:none}
 a:active, a:hover {text-decoration:underline}
-a:active {background-color:transparent}z
+a:active {background-color:transparent}
 address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 
 #tistorytoolbarid { display:none }
@@ -56,6 +56,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .area_head .on .frm_search{display:block}
 .area_head .lab_search{float:left;width:16px;height:16px;margin:11px 7px 0 12px;background-position:0 -400px}
 .area_head .tf_search{float:left;width:150px;margin-top:8px;border:0 none;vertical-align:top;color:#333}
+
 .area_head .area_navi{display:inline-block;position:relative;margin:0 2px 0 3px}
 .area_head .btn_cate{width:160px;height:38px;border:1px solid #3db39e;border-radius:3px;font-weight:bold;font-size:12px;line-height:38px;color:#3db39e}
 .area_head .btn_close{display:none}
@@ -63,6 +64,9 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .area_head .list_cate{display:none;position:absolute;top:36px;left:0;width:158px;padding:21px 0 10px;border:1px solid #3db39e;border-radius:0 0 3px 3px;background-color:#fff}
 .area_head .on .list_cate{display:block}
 .area_head .link_cate{display:block;padding-left:17px;margin-bottom:12px;font-size:12px;color:#333}
+
+.area_navi .list_cate ul li a { display:block;padding-left:17px;margin-bottom:12px;font-size:12px;color:#333 }
+
 .area_head .link_inclusion{margin-bottom:6px}
 .area_head .menu_profile{display:none}
 .area_head .list_small{padding-bottom:5px}

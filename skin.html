@@ -21,10 +21,10 @@
 <body>
 <s_t3>
 	<div id="dkIndex">
-		<!--웹접근성용 바로가기 링크 모음-->
 		<a href="#dkBody">본문 바로가기</a>
 		<a href="#dkGnb">메뉴 바로가기</a>
 	</div>
+
 	<div id="dkWrap" class="wrap_skin ">
 		<!-- 모바일의 경우, btn_menu 버튼 클릭시 layer_on 클래스 부여 -->
 		<!--position:relative 적용 / 레이아웃 관련 클래스 적용-->
@@ -34,7 +34,6 @@
 			<div class="area_profile ">
 				<!-- 네임 클릭시 'on' 클래스 부여 -->
 				<img src="[##_image_##]" width="50" height="50" class="img_profile" alt="프로필사진">
-				<!-- 임시이미지 -->
 				<button type="button" class="btn_name">[##_blogger_##]
 					<span class="ico_skin ico_name"></span>
 				</button>
@@ -50,6 +49,7 @@
 			<button type="button" class="btn_menu">
 				<span class="ico_skin ico_menu">카테고리 메뉴열기</span>
 			</button>
+
 			<div class="dimmed_layer"></div>
 			<div class="area_menu">
 				<s_search>
@@ -139,146 +139,161 @@
 								<li><a href="#none" class="link_other">Sustain Life, 삼복 더위의 브런치 삼복 더위의 브런치 삼복 더위의 브런치</a>(97)</li>
 							</ul>
 						</div>
+
+
 						<div class="area_reply ">
+
+
 							<strong class="tit_reply">댓글
-								<button type="button" class="btn_reply">150
+								<button type="button" class="btn_reply" onclick="[##_article_rep_rp_link_##]">
+									<s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count>
 									<span class="ico_skin ico_reply">댓글펼치기</span>
 								</button>
 							</strong>
+
+
+
 							<!-- 대체텍스트 댓글펼치기/댓글접기 변경 -->
-							<button type="button" class="btn_replymore">이전 댓글 보기</button>
-							<ul class="list_reply">
-								<li>
-									<img src="images/temp.png" width="50" height="50" class="img_profile" alt="프로필사진">
-									<!-- 임시이미지 -->
-									<span class="reply_content">
-										<a href="#" class="tit_nickname">카페플로렌</a>
-										<span class="ico_skin ico_secret">비밀댓글</span>
-										<span class="txt_reply">카페가 깔끔하고 좋네요.. 파리 마레지구 Merci 편집샵 느낌도 나고 고급스럽군요^^ 시원시원한 공간의 카페가 눈에 들어 오네요~
-											<br> 햇볕이 들어오면 분위기 넘 좋을것 같아요~</span>
-										<span class="txt_date">2015.07.02 00:33</span>
-									</span>
-									<button type="button" class="btn_replymenu">
-										<span class="ico_skin ico_replymenu">댓글 메뉴</span>
-									</button>
-									<div class="my_edit">
-										<a href="#none" class="link_edit">댓글주소</a>
-										<a href="#none" class="link_edit">수정/삭제</a>
-										<a href="#none" class="link_edit">댓글쓰기</a>
-									</div>
-								</li>
-								<li class="my_reply on">
-									<!-- PC : li에 마우스 오버시 'on' 클래스 부여 / 공통 : 내댓글일때 'my_reply' -->
-									<img src="images/temp.png" width="50" height="50" class="img_profile" alt="프로필사진">
-									<!-- 임시이미지 -->
-									<span class="reply_content">
-										<a href="#none" class="tit_nickname">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
-										<span class="txt_reply">카페가 깔끔하고 좋네요.. 파리 마레지구 Merci 편집샵 느낌도 나고 고급스럽군요^^ 시원시원한 공간의 카페가 눈에 들어 오네요~
-											<br> 햇볕이 들어오면 분위기 넘 좋을것 같아요~</span>
-										<span class="txt_date">2015.07.02 00:33</span>
-									</span>
-									<button type="button" class="btn_replymenu">
-										<span class="ico_skin ico_replymenu">댓글 메뉴</span>
-									</button>
-									<div class="my_edit">
-										<a href="#none" class="link_edit">댓글주소</a>
-										<a href="#none" class="link_edit">수정/삭제</a>
-										<a href="#none" class="link_edit">댓글쓰기</a>
-									</div>
-								</li>
-								<li class="prev_reply">
-									<!-- 모바일의 경우 해당덧글에 덧글이 달릴경우 prev_reply 클래스 부여 -->
-									<img src="images/temp.png" width="50" height="50" class="img_profile" alt="프로필사진">
-									<!-- 임시이미지 -->
-									<span class="reply_content">
-										<a href="#none" class="tit_nickname">그것은알기싫다</a>
-										<span class="txt_reply">카페가 깔끔하고 좋네요.. 파리 마레지구 Merci 편집샵 느낌도 나고 고급스럽군요^^ 시원시원한 공간의 카페가 눈에 들어 오네요~</span>
-										<span class="txt_date">2015.07.02 00:33</span>
-									</span>
-									<button type="button" class="btn_replymenu">
-										<span class="ico_skin ico_replymenu">댓글 메뉴</span>
-									</button>
-									<div class="my_edit">
-										<a href="#none" class="link_edit">댓글주소</a>
-										<a href="#none" class="link_edit">수정/삭제</a>
-										<a href="#none" class="link_edit">댓글쓰기</a>
-									</div>
-								</li>
-								<li class="re_reply">
-									<!-- 댓글의 댓글일 경우 re_reply 클래스 부여 -->
-									<img src="images/temp.png" width="50" height="50" class="img_profile" alt="프로필사진">
-									<!-- 임시이미지 -->
-									<span class="reply_content">
-										<a href="#none" class="tit_nickname">몽마르뜨언덕</a>
-										<span class="txt_reply">카페가 깔끔하고 좋네요.. 파리 마레지구 Merci 편집샵 느낌도 나고 고급스럽군요^^ 시원시원한 공간의 카페가 눈에 들어 오네요~ 시원시원한 공간의 카페가 눈에 들어 오네요~</span>
-										<span class="txt_date">2015.07.02 00:33</span>
-									</span>
-									<button type="button" class="btn_replymenu">
-										<span class="ico_skin ico_replymenu">댓글 메뉴</span>
-									</button>
-									<div class="my_edit">
-										<a href="#none" class="link_edit">댓글주소</a>
-										<a href="#none" class="link_edit">수정/삭제</a>
-										<a href="#none" class="link_edit">댓글쓰기</a>
-									</div>
-								</li>
-								<li class="reply_secret">
-									<img src="images/img_secret.gif" width="50" height="50" class="img_profile" alt="프로필사진">
-									<!-- 임시이미지 -->
-									<span class="reply_content">
-										<span class="tit_nickname">비밀댓글</span>
-										<span class="txt_date">2015.07.02 00:33</span>
-									</span>
-									<button type="button" class="btn_replymenu">
-										<span class="ico_skin ico_replymenu">댓글 메뉴</span>
-									</button>
-									<div class="my_edit">
-										<a href="#none" class="link_edit">댓글주소</a>
-										<a href="#none" class="link_edit">수정/삭제</a>
-										<a href="#none" class="link_edit">댓글쓰기</a>
-									</div>
-								</li>
-							</ul>
-							<form action="#" method="post">
-								<fieldset class="fld_reply">
-									<legend class="screen_out">댓글쓰기 폼</legend>
-									<div class="reply_write ">
-										<!-- 클릭시 'on_box' 추가 -->
-										<textarea name="txtReply" id="txtReply" class="tf_reply"></textarea>
-										<label for="txtReply" class="lab_write">여러분의 소중한 댓글을 입력해주세요</label>
-									</div>
-									<div class="reply_writer">
-										<div class="writer_info">
-											<span class="info_name ">
-												<!-- 클릭시 'on_box' 추가 -->
-												<label for="txtName" class="lab_info">이름</label>
-												<span class="wrap_info">
-													<input type="text" name="txtName" id="txtName" class="inp_info">
+							<s_rp>
+								<button type="button" class="btn_replymore">이전 댓글 보기</button>
+								<s_rp_container>
+									<ul class="list_reply">
+										<s_rp>
+											<li id='[##_rp_rep_id_##]'>
+												<img src="images/temp.png" width="50" height="50" class="img_profile" alt="프로필사진">
+												<!-- 임시이미지 -->
+												<span class="reply_content">
+													<a href="#" class="tit_nickname">[##_rp_rep_name_##]</a>
+													<span class="ico_skin ico_secret">비밀댓글</span>
+													<span class="txt_reply">[##_rp_rep_desc_##]</span>
+													<span class="txt_date">[##_rp_rep_date_##]</span>
 												</span>
+												<button type="button" class="btn_replymenu">
+													<span class="ico_skin ico_replymenu">댓글 메뉴</span>
+												</button>
+												<div class="my_edit">
+													<a href="[##_rp_rep_link_##]" class="link_edit">댓글주소</a>
+													<a href="[##_rp_rep_onclick_delete_##]" class="link_edit">수정/삭제</a>
+													<a href="[##_rp_rep_onclick_reply_##]" class="link_edit">댓글쓰기</a>
+												</div>
+											</li>
+										</s_rp>
+										<li class="my_reply on">
+											<!-- PC : li에 마우스 오버시 'on' 클래스 부여 / 공통 : 내댓글일때 'my_reply' -->
+											<img src="images/temp.png" width="50" height="50" class="img_profile" alt="프로필사진">
+											<!-- 임시이미지 -->
+											<span class="reply_content">
+												<a href="#none" class="tit_nickname">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+												<span class="txt_reply">카페가 깔끔하고 좋네요.. 파리 마레지구 Merci 편집샵 느낌도 나고 고급스럽군요^^ 시원시원한 공간의 카페가 눈에 들어 오네요~
+													<br> 햇볕이 들어오면 분위기 넘 좋을것 같아요~</span>
+												<span class="txt_date">2015.07.02 00:33</span>
 											</span>
-											<span class="info_pw ">
-												<!-- 클릭시 'on_box' 추가 -->
-												<label for="txtPw" class="lab_info">비밀번호</label>
-												<span class="wrap_info">
-													<input type="password" name="txtPw" id="txtPw" class="inp_info">
+											<button type="button" class="btn_replymenu">
+												<span class="ico_skin ico_replymenu">댓글 메뉴</span>
+											</button>
+											<div class="my_edit">
+												<a href="#none" class="link_edit">댓글주소</a>
+												<a href="#none" class="link_edit">수정/삭제</a>
+												<a href="#none" class="link_edit">댓글쓰기</a>
+											</div>
+										</li>
+										<li class="prev_reply">
+											<!-- 모바일의 경우 해당덧글에 덧글이 달릴경우 prev_reply 클래스 부여 -->
+											<img src="images/temp.png" width="50" height="50" class="img_profile" alt="프로필사진">
+											<!-- 임시이미지 -->
+											<span class="reply_content">
+												<a href="#none" class="tit_nickname">그것은알기싫다</a>
+												<span class="txt_reply">카페가 깔끔하고 좋네요.. 파리 마레지구 Merci 편집샵 느낌도 나고 고급스럽군요^^ 시원시원한 공간의 카페가 눈에 들어 오네요~</span>
+												<span class="txt_date">2015.07.02 00:33</span>
+											</span>
+											<button type="button" class="btn_replymenu">
+												<span class="ico_skin ico_replymenu">댓글 메뉴</span>
+											</button>
+											<div class="my_edit">
+												<a href="#none" class="link_edit">댓글주소</a>
+												<a href="#none" class="link_edit">수정/삭제</a>
+												<a href="#none" class="link_edit">댓글쓰기</a>
+											</div>
+										</li>
+										<li class="re_reply">
+											<!-- 댓글의 댓글일 경우 re_reply 클래스 부여 -->
+											<img src="images/temp.png" width="50" height="50" class="img_profile" alt="프로필사진">
+											<!-- 임시이미지 -->
+											<span class="reply_content">
+												<a href="#none" class="tit_nickname">몽마르뜨언덕</a>
+												<span class="txt_reply">카페가 깔끔하고 좋네요.. 파리 마레지구 Merci 편집샵 느낌도 나고 고급스럽군요^^ 시원시원한 공간의 카페가 눈에 들어 오네요~ 시원시원한 공간의 카페가 눈에 들어 오네요~</span>
+												<span class="txt_date">2015.07.02 00:33</span>
+											</span>
+											<button type="button" class="btn_replymenu">
+												<span class="ico_skin ico_replymenu">댓글 메뉴</span>
+											</button>
+											<div class="my_edit">
+												<a href="#none" class="link_edit">댓글주소</a>
+												<a href="#none" class="link_edit">수정/삭제</a>
+												<a href="#none" class="link_edit">댓글쓰기</a>
+											</div>
+										</li>
+										<li class="reply_secret">
+											<img src="images/img_secret.gif" width="50" height="50" class="img_profile" alt="프로필사진">
+											<!-- 임시이미지 -->
+											<span class="reply_content">
+												<span class="tit_nickname">비밀댓글</span>
+												<span class="txt_date">2015.07.02 00:33</span>
+											</span>
+											<button type="button" class="btn_replymenu">
+												<span class="ico_skin ico_replymenu">댓글 메뉴</span>
+											</button>
+											<div class="my_edit">
+												<a href="#none" class="link_edit">댓글주소</a>
+												<a href="#none" class="link_edit">수정/삭제</a>
+												<a href="#none" class="link_edit">댓글쓰기</a>
+											</div>
+										</li>
+									</ul>
+								</s_rp_container>
+								<form action="#" method="post">
+									<fieldset class="fld_reply">
+										<legend class="screen_out">댓글쓰기 폼</legend>
+										<div class="reply_write ">
+											<!-- 클릭시 'on_box' 추가 -->
+											<textarea name="txtReply" id="txtReply" class="tf_reply"></textarea>
+											<label for="txtReply" class="lab_write">여러분의 소중한 댓글을 입력해주세요</label>
+										</div>
+										<div class="reply_writer">
+											<div class="writer_info">
+												<span class="info_name ">
+													<!-- 클릭시 'on_box' 추가 -->
+													<label for="txtName" class="lab_info">이름</label>
+													<span class="wrap_info">
+														<input type="text" name="txtName" id="txtName" class="inp_info">
+													</span>
 												</span>
-											</span>
+												<span class="info_pw ">
+													<!-- 클릭시 'on_box' 추가 -->
+													<label for="txtPw" class="lab_info">비밀번호</label>
+													<span class="wrap_info">
+														<input type="password" name="txtPw" id="txtPw" class="inp_info">
+													</span>
+												</span>
+											</div>
+											<div class="writer_check">
+												<span class="check_secret ">
+													<!-- 체크시 'on'클래스 추가 -->
+													<input type="checkbox" name="checkSecret" id="checkSecret" class="inp_secret">
+													<label for="checkSecret" class="lab_secret">
+														<span class="ico_skin ico_check"></span>
+														<!-- 포커스 시 class 'ico_focused' 추가 -->비밀글
+													</label>
+												</span>
+												<button type="submit" class="btn_enter">입력</button>
+											</div>
 										</div>
-										<div class="writer_check">
-											<span class="check_secret ">
-												<!-- 체크시 'on'클래스 추가 -->
-												<input type="checkbox" name="checkSecret" id="checkSecret" class="inp_secret">
-												<label for="checkSecret" class="lab_secret">
-													<span class="ico_skin ico_check"></span>
-													<!-- 포커스 시 class 'ico_focused' 추가 -->비밀글
-												</label>
-											</span>
-											<button type="submit" class="btn_enter">입력</button>
-										</div>
-									</div>
-								</fieldset>
-							</form>
+									</fieldset>
+								</form>
+							</s_rp>
 						</div>
+
+
 						<div class="area_paging">
 							<span class="inner_paging">
 								<span class="ico_skin ico_prev">이전</span>
@@ -481,6 +496,11 @@
 </s_t3>
 
 <script src="./images/script.js"></script>
+<script>
+(function($) {
+	$.Area.init();
+})(jQuery);
+</script>
 
 </body>
 
