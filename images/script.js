@@ -3,9 +3,8 @@
 	var Area = {};
 
 	Area.Window = (function() {
-
 		var $window = $(window),
-				$areaHead = $(".area_head");
+			$areaHead = $(".area_head");
 
 		var onScroll = function(e) {
 			if ($window.scrollTop() > 45) {
@@ -25,7 +24,6 @@
 	})();
 
 	Area.Skin = (function() {
-
 		var $areaSkin = $(".wrap_skin");
 
 		var openMenu = function() {
@@ -63,7 +61,6 @@
 	})();
 
 	Area.Category = (function() {
-
 		var $areaNavi = $(".area_navi");
 
 		var toggleCategory = function() {
@@ -105,12 +102,38 @@
 		}
 	})();
 
+	Area.Comment = (function() {
+		var $btnOpen = $(".btn_reply"),
+			$listReply = $(".list_reply");
+
+		var changeStatus = function() {
+			if ($listReply.is(":show")) {
+				$btnOpen.removeClass("on");
+			} else {
+				$btnOpen.addClass("on");
+			}
+		};
+
+		var init = function() {
+			if ($listReply.is(":show")) {
+				$btnOpen.addClass("on");
+			}
+
+		};
+
+		return {
+			init: init,
+			changeStatus: changeStatus
+		}
+	})();
+
 	Area.init = function() {
 		Area.Window.init();
 		Area.Skin.init();
 		Area.Profile.init();
 		Area.Category.init();
 		Area.Search.init();
+		Area.Comment.init();
 	};
 
 	$.Area = {
