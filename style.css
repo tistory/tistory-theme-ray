@@ -169,14 +169,17 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .skin_view .list_share .link_ks:hover{background-position:0 -285px}
 .skin_view .list_share .link_tw{margin-right:0;background-position:0 -325px}
 .skin_view .list_share .link_tw:hover{margin-right:0;background-position:0 -360px}
-.skin_view .area_other{overflow:hidden;width:100%;margin-top:52px}
-.skin_view .tit_other{float:left;width:100%;padding-bottom:7px;border-bottom:1px solid #eee;font-weight:normal}
-.skin_view .tit_other .link_cate{font-weight:bold;color:#3db39e}
-.skin_view .tit_other .emph_t{font-weight:bold}
-.skin_view .list_other{float:left;width:100%;margin-top:15px}
-.skin_view .list_other li{float:left;width:50%;margin-bottom:8px;font-size:12px;color:#aaa}
-.skin_view .list_other .link_other{overflow:hidden;float:left;max-width:255px;margin-right:5px;font-size:12px;white-space:nowrap;text-overflow: ellipsis;color:#666}
-.skin_view .now_post .link_other{font-weight:bold;text-decoration:underline}
+
+.skin_view .another_category {overflow:hidden;width:100%;margin:52px 0 0; border:0; padding:0}
+.skin_view .another_category h4 { float:left;width:100%;padding:0 0 7px !important;border-bottom:1px solid #eee !important;font-weight:normal; font-size:14px !important }
+.skin_view .another_category h4 a { color:#3db39e !important; font-weight:bold }
+.skin_view .another_category table { float:left;width:100%;margin-top:15px !important }
+.skin_view .another_category table tr { float:left; width:50%;margin-bottom:8px; }
+.skin_view .another_category table th { width:100%;font-size:12px;color:#aaa; padding: 0 !important }
+.skin_view .another_category table th a { overflow:hidden;max-width:255px;font-size:12px;white-space:nowrap;text-overflow: ellipsis;color:#666 !important; border:0 !important }
+.skin_view .another_category table th a.current { text-decoration:underline !important }
+.skin_view .another_category table th span { }
+.skin_view .another_category table td { display:none }
 
 /* 댓글영역 */
 .skin_view .area_reply{margin-top:48px}
