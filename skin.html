@@ -18,7 +18,7 @@
 	<!--<![endif]-->
 </head>
 
-<body>
+<body id="[##_body_id_##]">
 <s_t3>
 	<div id="dkIndex">
 		<a href="#dkBody">본문 바로가기</a>
@@ -40,7 +40,8 @@
 				<ul class="list_name">
 					<li><a href="[##_owner_url_##]/entry/post" class="link_name">글쓰기</a></li>
 					<li><a href="[##_owner_url_##]" class="link_name">관리</a></li>
-					<li class="box_division"><a href="[##_guestbook_link_##]" class="link_name">방명록</a></li>
+					<li class="box_division"><a href="[##_taglog_link_##]" class="link_name">태그</a></li>
+					<li><a href="[##_guestbook_link_##]" class="link_name">방명록</a></li>
 					<li><a href="#none" class="link_name">링크추가</a></li>
 					<li><a href="[##_rss_url_##]" class="link_name">RSS</a></li>
 				</ul>
@@ -51,6 +52,7 @@
 			</button>
 
 			<div class="dimmed_layer"></div>
+
 			<div class="area_menu">
 				<s_search>
 					<div class="area_search">
@@ -78,6 +80,10 @@
 						<span class="ico_skin ico_close">닫기</span>
 					</button>
 				</div>
+			</div>
+
+			<div class="tit_category">
+				<a class="link_category">[##_page_title_##]</a>
 			</div>
 		</div>
 
@@ -223,13 +229,13 @@
 																</span>
 																<span class="info_pw ">
 																	<label for="[##_rp_input_password_##]" class="wrap_info"></label>
-																	<input type="password" name="[##_rp_input_password_##]" id="txtPw" class="inp_info" placeholder="비밀번호" tabindex="3">
+																	<input type="password" name="[##_rp_input_password_##]" class="inp_info" placeholder="비밀번호" tabindex="3">
 																</span>
 															</div>
 														</s_rp_guest>
 														<div class="writer_check">
 															<span class="check_secret ">
-																<input type="checkbox" name="secret" id="secret" class="inp_secret" tabindex="4">
+																<input type="checkbox" name="secret" class="inp_secret" tabindex="4">
 																<label for="secret" class="lab_secret">
 																	<span class="ico_skin ico_check"></span>비밀글
 																</label>
@@ -249,6 +255,96 @@
 						</s_permalink_article_rep>
 					</div>
 				</s_article_rep>
+
+				<s_tag>
+					<div id="mArticle" class="article_skin skin_tag">
+						<h2 id= "dkBody" class="screen_out">티스토리 태그</h2>
+						<ul class="list_tag">
+							<s_tag_rep>
+								<li><a href="[##_tag_link_##]" class="link_tag [##_tag_class_##]">[##_tag_name_##]</a></li>
+							</s_tag_rep>
+						</ul>
+					</div>
+				</s_tag>
+
+				<s_guest>
+					<div id="mArticle" class="article_skin skin_visitor">
+						<h2 id= "dkBody" class="screen_out">티스토리 방명록</h2>
+						<div class="area_reply">
+
+							<s_guest_input_form>
+								<fieldset class="fld_reply">
+									<legend class="screen_out">댓글쓰기 폼</legend>
+									<div class="reply_write "><!-- 클릭시 'on_box' 추가 -->
+										<textarea name="[##_guest_textarea_body_##]" class="tf_reply" placeholder="여러분의 소중한 방명록을 남겨주세요"></textarea>
+										<label for="[##_guest_textarea_body_##]" class="lab_write"></label>
+									</div>
+									<div class="reply_writer">
+										<s_guest_member>
+											<s_guest_form>
+												<div class="writer_info">
+													<span class="info_name "><!-- 클릭시 'on_box' 추가 -->
+														<label for="[##_guest_input_name_##]" class="lab_info"></label>
+														<span class="wrap_info"><input type="text" name="[##_guest_input_name_##]" class="inp_info" placeholder="이름"></span>
+													</span>
+													<span class="info_pw "><!-- 클릭시 'on_box' 추가 -->
+														<label for="[##_guest_input_password_##]" class="lab_info"></label>
+														<span class="wrap_info"><input type="password" name="[##_guest_input_password_##]" class="inp_info" placeholder="비밀번호"></span>
+													</span>
+												</div>
+											</s_guest_form>
+										</s_guest_member>
+										<div class="writer_check">
+											<button type="submit" class="btn_enter" onclick="[##_guest_onclick_submit_##]">입력</button>
+										</div>
+									</div>
+								</fieldset>
+							</s_guest_input_form>
+
+							<s_guest_container>
+								<ul class="list_reply">
+									<s_guest_rep>
+										<li id="[##_guest_rep_id_##]" class="[##_guest_rep_class_##]">
+											<img src="http://i1.daumcdn.net/cfs.tistory/static/skin/avatar_default.gif" width="50" height="50" class="img_profile" alt="프로필사진">
+
+											<span class="reply_content">
+												<a href="#" class="tit_nickname">[##_guest_rep_name_##]</a>
+												<span class="txt_reply">[##_guest_rep_desc_##]</span>
+												<span class="txt_date">[##_guest_rep_date_##]</span>
+											</span>
+
+											<button type="button" class="btn_replymenu"><span class="ico_skin ico_replymenu">댓글 메뉴</span></button>
+											<div class="my_edit">
+												<a href="#none" class="link_edit" onclick="[##_guest_rep_onclick_delete_##] ">수정/삭제</a>
+												<a href="#none" class="link_edit" onclick="[##_guest_rep_onclick_reply_##] ">댓글쓰기</a>
+											</div>
+										</li>
+
+										<s_guest_reply_container>
+											<s_guest_reply_rep>
+												<li id="[##_guest_rep_id_##]" class="re_reply [##_guest_rep_class_##]">
+													<img src="http://i1.daumcdn.net/cfs.tistory/static/skin/avatar_default.gif" width="50" height="50" class="img_profile" alt="프로필사진">
+
+													<span class="reply_content">
+														<a href="#" class="tit_nickname">[##_guest_rep_name_##]</a>
+														<span class="txt_reply">[##_guest_rep_desc_##]</span>
+														<span class="txt_date">[##_guest_rep_date_##]</span>
+													</span>
+
+													<button type="button" class="btn_replymenu"><span class="ico_skin ico_replymenu">댓글 메뉴</span></button>
+													<div class="my_edit">
+														<a href="#none" class="link_edit" onclick="[##_guest_rep_onclick_delete_##] ">수정/삭제</a>
+													</div>
+												</li>
+											</s_guest_reply_rep>
+										</s_guest_reply_container>
+									</s_guest_rep>
+							</s_guest_container>
+
+						</div>
+					</div>
+				</s_guest>
+
 
 				<s_paging>
 					<div class="area_paging">

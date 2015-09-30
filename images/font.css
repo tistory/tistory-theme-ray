@@ -1,5 +1,4 @@
 @charset "utf-8";
-$response.setContentType("text/css")
 @font-face {
     font-family: 'Noto Sans regular';
     src: url(//i1.daumcdn.net/cfs.tistory/static/font/notokr-regular.woff2) format('woff2'),

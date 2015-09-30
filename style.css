@@ -70,6 +70,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .area_head .link_small{display:block;padding-left:21px;margin-bottom:5px;font-size:12px;color:#666}
 .area_head .now .link_cate, .area_head .link_cate:hover, .area_head .link_small:hover{text-decoration:underline;font-weight:bold;color:#3db39e}
 .area_head .ico_dot{display:inline-block;width:2px;height:2px;margin:8px 8px 0 0;vertical-align:top;background-color:#b4b4b4}
+#tt-body-page .area_head .tit_category { display:none }
 .area_head .tit_category{padding-top:27px;text-align:center}
 .area_head .tit_category .link_category{font-size:20px;font-family:'Noto Sans Bold';color:#3db39e}
 .area_head .tit_category .link_category:hover{text-decoration:none}
@@ -150,8 +151,21 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .skin_view .link_detail{font-size:12px;color:#aaa}
 .skin_view .link_detail:hover{text-decoration:none}
 .skin_view .area_view{padding:20px 0}
-.skin_view .view_text{font-size:16px;line-height:28px}
-.skin_view .img_view{margin:22px 0}
+.skin_view .area_view p {font-size:16px;line-height:28px; margin:0 auto 28px}
+.skin_view .area_view a {color:#3db39e}
+.skin_view .area_view h1, h2, h3 { font-size:26px; line-height:30px; margin:52px auto 28px }
+.skin_view .area_view blockquote { padding: 10px 20px; margin: 0 auto 28px; border-left:5px solid #eee }
+.skin_view .area_view blockquote,
+.skin_view .area_view blockquote p { font-size:18px; line-height:30px }
+.skin_view .area_view blockquote ol:last-child,
+.skin_view .area_view blockquote ul:last-child,
+.skin_view .area_view blockquote p:last-child { margin-bottom:0 }
+
+.skin_view .area_view pre { background-color:#F6F7F8; margin:28px auto; padding:16px; word-wrap: break-word; font-family: Menlo,Consolas,Monaco,monospace; font-size:14px; line-height:20px}
+
+.skin_view .imageblock {width:auto !important; height:auto !important}
+.skin_view .imageblock img { margin:22px 0; width:100%; height:auto }
+
 .skin_view .area_etc{overflow:hidden;height:29px;margin-top:64px}
 .skin_view .area_etc .list_tag{float:left;margin-top:5px;font-family:'Noto Sans bold'}
 .skin_view .list_tag .tit_tag{display:inline-block;margin-right:8px;font-weight:bold;font-size:12px;color:#3db39e}
