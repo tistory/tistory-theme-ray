@@ -75,7 +75,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .area_navi .list_cate ul li ul li ul li a { padding-left:0;margin-bottom:5px;font-size:12px;color:#666 }
 .area_navi .list_cate .menu_profile { display:none }
 
-.tit_category{ position:fixed; top:0; width:50%; left:25%; line-height:80px; text-align:center;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;z-index:21}
+.area_list .tit_category{ position:fixed; top:0; width:50%; left:25%; line-height:80px; text-align:center;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;z-index:21}
 .tit_category .link_category{font-size:20px;font-family:'Noto Sans Bold';color:#3db39e}
 .tit_category .link_category:hover{text-decoration:none}
 .dimmed_layer{ position:fixed; top:0; bottom:0; left:0; right:0; display:none; z-index:30}
@@ -277,8 +277,8 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 	.area_head{z-index:20;height:60px}
 	.area_head .area_profile{overflow:hidden;float:none;padding:10px 65px 0 15px}
 	.area_head .img_profile{margin-right:8px}
-	.tit_category{ line-height:60px }
-	.tit_category .link_category{font-size:16px}
+	.area_list .tit_category{ line-height:60px }
+	.area_list .tit_category .link_category{font-size:16px}
 	.area_head .on .list_name{display:none}
 	.area_head .btn_name{margin-top:0px;font-size:13px;color:#333}
 	.area_head .ico_name{display:none}
@@ -450,7 +450,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 	.lock_head .btn_name{margin-top:0;height:33px;line-height:33px}
 	.lock_head .txt_condition{display:none}
 	.lock_head .btn_cate{margin-top:6px}
-	.lock_head .tit_category{line-height:45px}
+	.lock_head .area_list .tit_category{line-height:45px}
 	.lock_head .btn_menu {margin-top:5px }
 	/* 카테고리 레이어 활성화 */
 	.layer_on { overflow:hidden }
