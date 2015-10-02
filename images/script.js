@@ -2,30 +2,10 @@
 
 	var Area = {};
 
-	Area.Window = (function() {
-		var $window = $(window),
-			$areaHead = $(".area_head");
-
-		var onScroll = function(e) {
-			if ($window.scrollTop() > 45) {
-				$areaHead.addClass("lock_head");
-			} else {
-				$areaHead.removeClass("lock_head");
-			}
-		};
-
-		var init = function() {
-			$window.on("scroll", onScroll);
-		};
-
-		return {
-			init: init
-		}
-	})();
-
 	Area.Skin = (function() {
-		var $areaSkin = $(".wrap_skin"),
-			$body = $("body");
+		var $window = $(window),
+			$body = $(document.body),
+			$areaSkin = $(".wrap_skin");
 
 		var openMenu = function() {
 			$body.addClass("layer_on");
@@ -35,7 +15,16 @@
 			$body.removeClass("layer_on");
 		};
 
+		var onScroll = function(e) {
+			if ($window.scrollTop() > 45) {
+				$areaSkin.addClass("lock_head");
+			} else {
+				$areaSkin.removeClass("lock_head");
+			}
+		};
+
 		var init = function() {
+			$window.on("scroll", onScroll);
 			$areaSkin.on("click", ".btn_menu", openMenu);
 			$areaSkin.on("click", ".btn_close", closeMenu);
 		};
@@ -175,7 +164,6 @@
 	})();
 
 	Area.init = function() {
-		Area.Window.init();
 		Area.Skin.init();
 		Area.Profile.init();
 		Area.Category.init();
