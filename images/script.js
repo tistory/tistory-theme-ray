@@ -107,18 +107,13 @@
 			$fieldReply = $(".fld_reply");
 
 		var changeStatus = function() {
-			if ($fieldReply.is(":visible")) {
-				$btnOpen.removeClass("on");
-			} else {
-				$btnOpen.addClass("on");
-			}
+			$btnOpen.toggleClass("on");
 		};
 
 		var init = function() {
 			if ($fieldReply.is(":visible")) {
 				$btnOpen.addClass("on");
 			}
-
 		};
 
 		return {
@@ -188,10 +183,6 @@
 		Area.SocialShare.init();
 	};
 
-	$.Area = {
-		init: function() {
-			Area.init();
-		}
-	};
+	$.Area = Area;
 
 })(jQuery);

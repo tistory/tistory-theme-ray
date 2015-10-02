@@ -52,7 +52,7 @@
 			</button>
 
 			<div class="dimmed_layer"></div>
-
+			
 			<div class="area_menu">
 				<s_search>
 					<div class="area_search">
@@ -139,7 +139,6 @@
 									<strong class="screen_out">공유하기 링크</strong>
 									<ul class="list_share">
 										<li><a href="#none" class="ico_skin link_fb" data-service="facebook">페이스북</a></li>
-										<li><a href="#none" class="ico_skin link_kt" data-service="kakaotalk">카카오톡</a></li>
 										<li><a href="#none" class="ico_skin link_ks" data-service="kakaostory">카카오스토리</a></li>
 										<li><a href="#none" class="ico_skin link_tw" data-service="twitter">트위터</a></li>
 									</ul>
@@ -150,7 +149,7 @@
 
 
 									<strong class="tit_reply">댓글
-										<button type="button" class="btn_reply" onclick="[##_article_rep_rp_link_##]">
+										<button type="button" class="btn_reply" onclick="$.Area.Comment.changeStatus();[##_article_rep_rp_link_##]">
 											<s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count>
 											<span class="ico_skin ico_reply">댓글펼치기</span>
 										</button>
