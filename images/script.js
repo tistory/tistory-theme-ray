@@ -24,14 +24,15 @@
 	})();
 
 	Area.Skin = (function() {
-		var $areaSkin = $(".wrap_skin");
+		var $areaSkin = $(".wrap_skin"),
+			$body = $("body");
 
 		var openMenu = function() {
-			$areaSkin.addClass("layer_on");
+			$body.addClass("layer_on");
 		};
 
 		var closeMenu = function() {
-			$areaSkin.removeClass("layer_on");
+			$body.removeClass("layer_on");
 		};
 
 		var init = function() {

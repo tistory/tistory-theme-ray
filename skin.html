@@ -47,43 +47,49 @@
 				</ul>
 				<p class="txt_condition">[##_desc_##]</p>
 			</div>
-			<button type="button" class="btn_menu">
-				<span class="ico_skin ico_menu">카테고리 메뉴열기</span>
-			</button>
-
-			<div class="dimmed_layer"></div>
-			
-			<div class="area_menu">
-				<s_search>
-					<div class="area_search">
-						<button type="button" class="btn_search">
-							<span class="ico_skin ico_search">검색하기</span>
-						</button>
-						<form action="#" method="get" class="frm_search" onsubmit="[##_search_onclick_submit_##]">
-							<fieldset>
-								<legend class="screen_out">검색하기 폼</legend>
-								<label for="tfSearch" class="ico_skin lab_search">검색하기</label>
-								<input type="text" name="[##_search_name_##]" value="[##_search_text_##]" class="tf_search">
-							</fieldset>
-						</form>
-					</div>
-				</s_search>
-
-				<div role="navigation" class="area_navi">
-					<button type="button" class="btn_cate">CATEGORY <span class="ico_skin ico_cate"></span></button>
-
-					<div class="list_cate">
-						[##_category_list_##]
-					</div>
-
-					<button type="button" class="btn_close">
-						<span class="ico_skin ico_close">닫기</span>
-					</button>
-				</div>
-			</div>
 
 			<div class="tit_category">
 				<a class="link_category">[##_page_title_##]</a>
+			</div>
+
+			<button type="button" class="btn_menu">
+				<span class="ico_skin ico_menu">카테고리 메뉴열기</span>
+			</button>
+		</div>
+
+		<div class="dimmed_layer"></div>
+
+		<button type="button" class="btn_close">
+			<span class="ico_skin ico_close">닫기</span>
+		</button>
+
+		<div class="area_menu">
+			<s_search>
+				<div class="area_search">
+					<button type="button" class="btn_search">
+						<span class="ico_skin ico_search">검색하기</span>
+					</button>
+					<form action="#" method="get" class="frm_search" onsubmit="[##_search_onclick_submit_##]">
+						<fieldset>
+							<legend class="screen_out">검색하기 폼</legend>
+							<label for="tfSearch" class="ico_skin lab_search">검색하기</label>
+							<input type="text" name="[##_search_name_##]" value="[##_search_text_##]" class="tf_search">
+						</fieldset>
+					</form>
+				</div>
+			</s_search>
+
+			<div role="navigation" class="area_navi">
+				<button type="button" class="btn_cate">CATEGORY <span class="ico_skin ico_cate"></span></button>
+
+				<div class="list_cate">
+					[##_category_list_##]
+
+					<ul class="menu_profile">
+						<li><a href="[##_taglog_link_##]">태그</a></li>
+						<li><a href="[##_guestbook_link_##]">방명록</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
@@ -212,30 +218,30 @@
 												<legend class="screen_out">댓글쓰기 폼</legend>
 												<div class="reply_write ">
 													<label for="[##_rp_input_comment_##]" class="lab_write"></label>
-													<textarea name="[##_rp_input_comment_##]" class="tf_reply" placeholder="여러분의 소중한 댓글을 입력해주세요" tabindex="1"></textarea>
+													<textarea id="[##_rp_input_comment_##]" name="[##_rp_input_comment_##]" class="tf_reply" placeholder="여러분의 소중한 댓글을 입력해주세요" tabindex="1"></textarea>
 												</div>
 												<div class="reply_writer">
-													<div class="writer_check">
-														<button type="submit" class="btn_enter" onclick="[##_rp_onclick_submit_##]" tabindex="5">입력</button>
-													</div>
-
 													<s_rp_member>
 														<s_rp_guest>
 															<div class="writer_info">
 																<span class="info_name ">
-																	<label for="[##_rp_input_name_##]" class="wrap_info"></label>
-																	<input type="text" name="[##_rp_input_name_##]" class="inp_info" placeholder="이름" value="[##_guest_name_##]" tabindex="2">
+																	<span class="wrap_info">
+																		<label for="[##_rp_input_name_##]" class="wrap_info"></label>
+																		<input type="text" name="[##_rp_input_name_##]" id="[##_rp_input_name_##]" class="inp_info" placeholder="이름" value="[##_guest_name_##]" tabindex="2">
+																	</span>
 																</span>
 																<span class="info_pw ">
-																	<label for="[##_rp_input_password_##]" class="wrap_info"></label>
-																	<input type="password" name="[##_rp_input_password_##]" class="inp_info" placeholder="비밀번호" tabindex="3">
+																	<span class="wrap_info">
+																		<label for="[##_rp_input_password_##]" class="wrap_info"></label>
+																		<input type="password" name="[##_rp_input_password_##]" id="[##_rp_input_password_##]" class="inp_info" placeholder="비밀번호" tabindex="3">
+																	</span>
 																</span>
 															</div>
 														</s_rp_guest>
 														<div class="writer_check">
 															<span class="check_secret ">
-																<input type="checkbox" name="secret" class="inp_secret" tabindex="4">
-																<label for="secret" class="lab_secret">
+																<input type="checkbox" name="[##_rp_input_is_secret_##]" id="[##_rp_input_is_secret_##]" class="inp_secret" tabindex="4">
+																<label for="[##_rp_input_is_secret_##]" class="lab_secret">
 																	<span class="ico_skin ico_check"></span>비밀글
 																</label>
 															</span>
@@ -244,6 +250,9 @@
 
 													</s_rp_member>
 
+													<div class="writer_btn">
+														<button type="submit" class="btn_enter" onclick="[##_rp_onclick_submit_##]" tabindex="5">입력</button>
+													</div>
 												</div>
 											</fieldset>
 										</s_rp_input_form>
