@@ -9,7 +9,7 @@ input,select,textarea,button {vertical-align:middle}
 input::-ms-clear {display:none}
 button {border:0 none;background-color:transparent;cursor:pointer}
 body {background:#fff}
-body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Noto Sans demilight', sans-serif;color:#666} /* color값은 디자인가이드에 맞게사용 */
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Noto Sans', sans-serif;color:#666} /* color값은 디자인가이드에 맞게사용 */
 a {color:#333;text-decoration:none}
 a:active, a:hover {text-decoration:underline}
 a:active {background-color:transparent}
@@ -76,7 +76,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .area_navi .list_cate .menu_profile { display:none }
 
 .area_list .tit_category{ position:fixed; top:0; width:50%; left:25%; line-height:80px; text-align:center;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;z-index:21}
-.tit_category .link_category{font-size:20px;font-family:'Noto Sans Bold';color:#3db39e}
+.tit_category .link_category{font-size:20px;font-family:'Noto Sans'; font-weight:bold;color:#3db39e}
 .tit_category .link_category:hover{text-decoration:none}
 .dimmed_layer{ position:fixed; top:0; bottom:0; left:0; right:0; display:none; z-index:30}
 .area_head .btn_menu{display:none}
@@ -139,8 +139,8 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 /* 뷰 */
 .skin_view .area_title{margin-bottom:27px;padding:70px 0 45px;border-bottom:1px solid #ebebeb;text-align:center}
 .skin_view .area_title a { text-decoration:none }
-.skin_view .tit_category a {font-family:'Noto Sans bold';color:#3db39e}
-.skin_view .tit_post{margin-top:8px;font-size:40px;font-family:'Noto Sans bold';color:#000}
+.skin_view .tit_category a {font-family:'Noto Sans'; font-weight:bold; color:#3db39e}
+.skin_view .tit_post{margin-top:8px;font-size:40px;font-family:'Noto Sans';font-weight:bold;color:#000}
 .skin_view .txt_detail{display:block;margin-top:10px;font-size:12px;color:#aaa}
 .skin_view .txt_detail .my_edit{display:none}
 .skin_view .my_post .my_edit{display:inline-block}
@@ -167,7 +167,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .skin_view .imageblock img { width:100%; height:auto }
 
 .skin_view .area_etc{overflow:hidden;height:29px;margin-top:64px}
-.skin_view .area_etc .list_tag{float:left;margin-top:5px;font-family:'Noto Sans bold'}
+.skin_view .area_etc .list_tag{float:left;margin-top:5px;font-family:'Noto Sans';font-weight:bold;}
 .skin_view .list_tag .tit_tag{display:inline-block;margin-right:8px;font-weight:bold;font-size:12px;color:#3db39e}
 .skin_view .list_tag .desc_tag{display:inline-block;margin-right:2px;font-weight:bold;font-size:12px;color:#aaa}
 .skin_view .list_tag .desc_tag a{color:#aaa}
@@ -235,7 +235,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .area_reply .list_reply .my_reply{background-color:#fcfcfc}
 .area_reply .list_reply .re_reply{padding-left:86px}
 .area_reply .reply_content{float:left}
-.area_reply .tit_nickname{display:inline-block;overflow:hidden;max-width:515px;margin:4px 5px 0 0;font-weight:bold;font-family:'Noto Sans Bold';color:#333;white-space:nowrap}
+.area_reply .tit_nickname{display:inline-block;overflow:hidden;max-width:515px;margin:4px 5px 0 0;font-weight:bold;font-family:'Noto Sans';font-weight:bold;color:#333;white-space:nowrap}
 .area_reply .my_reply .tit_nickname{color:#3db39e}
 .area_reply .tit_nickname:hover{text-decoration:none}
 .area_reply .ico_secret{width:10px;height:12px;margin-top:6px;background-position:0 -475px;vertical-align:top}
@@ -248,7 +248,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .area_reply .my_edit .link_edit{margin:0 2px;font-size:12px;color:#3db39e}
 .area_reply .my_edit .link_edit:hover{text-decoration:none}
 .area_reply .hiddenComment .tit_nickname{display:none}
-.area_reply .hiddenComment .txt_reply{font-weight:bold;font-family:'Noto Sans Bold';font-size:14px}
+.area_reply .hiddenComment .txt_reply{font-weight:bold;font-family:'Noto Sans';font-weight:bold;font-size:14px}
 .area_reply .hiddenComment .txt_date{}
 
 /* 리스트 */
@@ -268,7 +268,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .skin_tag .list_tag{overflow:hidden;padding:30px 0 90px}
 .skin_tag .list_tag li{float:left;margin:0 10px 10px 0}
 .skin_tag .link_tag{display:block;height:34px;padding:0 13px;border-radius:34px;line-height:40px;background-color:#f0f0f0}
-.skin_tag .link_tag:hover{height:32px;padding:0 12px;border:1px solid #3db39e;font-family:'Noto Sans Bold';line-height:38px;background-color:#fff;text-decoration:none;color:#3db39e}
+.skin_tag .link_tag:hover{height:32px;padding:0 12px;border:1px solid #3db39e;font-family:'Noto Sans';font-weight:bold;line-height:38px;background-color:#fff;text-decoration:none;color:#3db39e}
 
 @media only screen and (max-width:820px) {
 	.ico_skin{background:url("images/ico_skin_320.png") 0 0 no-repeat}
