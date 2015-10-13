@@ -425,9 +425,10 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 	.skin_view .another_category { margin: 20px auto; border-top:1px solid #ebebeb; border-bottom:1px solid #eee; padding:21px 0}
 	.skin_view .another_category h4 { float:none; padding:0 15px !important; width:auto; border:0 !important }
 	.skin_view .another_category table { float:none; margin-top:12px !important; max-height:145px; overflow:hidden; display:block }
-	.skin_view .another_category table tr { width:100%; margin-bottom:9px;padding: 0 15px !important }
+	.skin_view .another_category table tr { width:100%; margin-bottom:9px;padding:0 15px !important }
+	.skin_view .another_category table tr:nth-child(even) th { padding:0 !important }
 	.skin_view .another_category table th { font-size:14px;color:#999 }
-	.skin_view .another_category table th a { font-size:15px; letter-spacing: -1px; color:#333 !important }
+	.skin_view .another_category table th a { font-size:15px; letter-spacing: -1px; color:#333 !important; max-width:230px }
 	.skin_view .another_category table th a.current { font-weight:bold }
 
 	.skin_view .area_other{position:absolute;left:0;bottom:-218px;width:100%;height:178px;margin:0 0 22px;padding:21px 0 0;border-top:1px solid #ebebeb}
