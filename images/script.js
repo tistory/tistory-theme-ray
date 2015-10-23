@@ -15,16 +15,7 @@
 			$body.removeClass("layer_on");
 		};
 
-		var onScroll = function(e) {
-			if ($window.scrollTop() > 45) {
-				$areaSkin.addClass("lock_head");
-			} else {
-				$areaSkin.removeClass("lock_head");
-			}
-		};
-
 		var init = function() {
-			$window.on("scroll", onScroll);
 			$areaSkin.on("click", ".btn_menu", openMenu);
 			$areaSkin.on("click", ".btn_close", closeMenu);
 		};

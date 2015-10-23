@@ -42,7 +42,7 @@
 						<li><a href="#none" class="link_name">링크추가</a></li>
 						<li><a href="[##_rss_url_##]" class="link_name">RSS</a></li>
 					</ul>
-					<p class="txt_condition">[##_desc_##]</p>
+					<p class="txt_condition">[##_title_##]</p>
 				</div>
 			</div>
 
@@ -98,6 +98,91 @@
 
 		<div id="dkContent" class="cont_skin" role="main">
 			<div id="cMain">
+
+				<s_notice_rep>
+					<div id="mArticle" class="article_skin">
+						<s_index_article_rep>
+							<div class="list_content">
+								<a href="[##_notice_rep_link_##]" class="link_post">
+									<strong class="tit_post">[##_notice_rep_title_##]</strong>
+									<p class="txt_post">[##_notice_rep_summary_##]</p>
+								</a>
+								<div class="detail_info">
+									<a class="link_cate">공지사항</a>
+									<span class="txt_bar"></span>
+									[##_notice_rep_date_##]
+								</div>
+							</div>
+						</s_index_article_rep>
+
+						<s_permalink_article_rep>
+							<div class="skin_view">
+								<h2 id="dkBody" class="screen_out">티스토리 뷰</h2>
+								<div class="area_title">
+									<strong class="tit_category"><a>공지사항</a></strong>
+									<h3 class="tit_post"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h3>
+									<span class="txt_detail my_post">[##_notice_rep_author_##]
+										<span class="txt_bar"></span>[##_notice_rep_date_##]
+									</span>
+								</div>
+								<div class="area_view">
+									[##_notice_rep_desc_##]
+								</div>
+
+								<div class="area_etc">
+									<strong class="screen_out">공유하기 링크</strong>
+									<ul class="list_share">
+										<li><a href="#none" class="ico_skin link_fb" data-service="facebook">페이스북</a></li>
+										<li><a href="#none" class="ico_skin link_ks" data-service="kakaostory">카카오스토리</a></li>
+										<li><a href="#none" class="ico_skin link_tw" data-service="twitter">트위터</a></li>
+									</ul>
+								</div>
+							</div>
+						</s_permalink_article_rep>
+					</div>
+				</s_notice_rep>
+
+				<s_article_protected>
+
+					<div id="mArticle" class="article_skin">
+						<s_index_article_rep>
+							<div class="list_content">
+								<a href="[##_article_rep_link_##]" class="link_post">
+									<strong class="tit_post">[##_article_rep_title_##]</strong>
+									<p class="txt_post">보호되어 있는 글입니다.</p>
+								</a>
+								<div class="detail_info">
+									<a href="" class="link_cate">보호글</a>
+									<span class="txt_bar"></span>
+									[##_article_rep_date_##]
+								</div>
+							</div>
+						</s_index_article_rep>
+
+						<s_permalink_article_rep>
+							<div class="skin_view">
+								<h2 id="dkBody" class="screen_out">티스토리 뷰</h2>
+								<div class="area_title">
+									<strong class="tit_category"><a>보호글</a></strong>
+									<h3 class="tit_post"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h3>
+									<span class="txt_detail my_post">
+										<span class="txt_bar"></span>[##_article_rep_date_##]
+									</span>
+								</div>
+								<div class="area_view">
+									[##_notice_rep_desc_##]
+									<form class="protected_form" onsubmit="[##_article_dissolve_##]">
+										<p>보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
+										<input type="password" id="[##_article_password_##]" name="[##_article_password_##]" value="" placeholder="비밀번호" />
+										<button type="submit">확인</button>
+									</form>
+								</div>
+							</div>
+						</s_permalink_article_rep>
+					</div>
+
+				</s_article_protected>
+
 				<s_article_rep>
 					<div id="mArticle" class="article_skin">
 
@@ -136,19 +221,19 @@
 									[##_article_rep_desc_##]
 								</div>
 								<div class="area_etc">
-									<s_tag_label>
-										<dl class="list_tag">
-											<dt class="tit_tag">TAG</dt>
-											<dd class="desc_tag">[##_tag_label_rep_##]</dd>
-										</dl>
-									</s_tag_label>
-
 									<strong class="screen_out">공유하기 링크</strong>
 									<ul class="list_share">
 										<li><a href="#none" class="ico_skin link_fb" data-service="facebook">페이스북</a></li>
 										<li><a href="#none" class="ico_skin link_ks" data-service="kakaostory">카카오스토리</a></li>
 										<li><a href="#none" class="ico_skin link_tw" data-service="twitter">트위터</a></li>
 									</ul>
+
+									<s_tag_label>
+										<dl class="list_tag">
+											<dt class="tit_tag">TAG</dt>
+											<dd class="desc_tag">[##_tag_label_rep_##]</dd>
+										</dl>
+									</s_tag_label>
 								</div>
 
 
@@ -227,13 +312,11 @@
 															<div class="writer_info">
 																<span class="info_name ">
 																	<span class="wrap_info">
-																		<label for="[##_rp_input_name_##]" class="wrap_info"></label>
 																		<input type="text" name="[##_rp_input_name_##]" id="[##_rp_input_name_##]" class="inp_info" placeholder="이름" value="[##_guest_name_##]" tabindex="2">
 																	</span>
 																</span>
 																<span class="info_pw ">
 																	<span class="wrap_info">
-																		<label for="[##_rp_input_password_##]" class="wrap_info"></label>
 																		<input type="password" name="[##_rp_input_password_##]" id="[##_rp_input_password_##]" class="inp_info" placeholder="비밀번호" tabindex="3">
 																	</span>
 																</span>
@@ -266,6 +349,12 @@
 				</s_article_rep>
 
 				<s_tag>
+					<div class="area_list">
+						<div class="tit_category">
+							<a class="link_category">태그</a>
+						</div>
+					</div>
+
 					<div id="mArticle" class="article_skin skin_tag">
 						<h2 id= "dkBody" class="screen_out">티스토리 태그</h2>
 						<ul class="list_tag">
@@ -277,6 +366,12 @@
 				</s_tag>
 
 				<s_guest>
+					<div class="area_list">
+						<div class="tit_category">
+							<a class="link_category">방명록</a>
+						</div>
+					</div>
+
 					<div id="mArticle" class="article_skin skin_visitor">
 						<h2 id= "dkBody" class="screen_out">티스토리 방명록</h2>
 						<div class="area_reply">
@@ -285,7 +380,7 @@
 								<fieldset class="fld_reply">
 									<legend class="screen_out">댓글쓰기 폼</legend>
 									<div class="reply_write "><!-- 클릭시 'on_box' 추가 -->
-										<textarea name="[##_guest_textarea_body_##]" class="tf_reply" placeholder="여러분의 소중한 방명록을 남겨주세요" tabindex="1"></textarea>
+										<textarea name="[##_guest_textarea_body_##]" class="tf_reply" placeholder="여러분의 소중한 메시지를 남겨주세요" tabindex="1"></textarea>
 										<label for="[##_guest_textarea_body_##]" class="lab_write"></label>
 									</div>
 									<div class="reply_writer">
@@ -367,7 +462,7 @@
 
 
 				<s_paging>
-					<div class="area_paging">
+					<div class="area_paging area_paging_list">
 						<span class="inner_paging">
 							<a [##_prev_page_##] class="ico_skin link_prev [##_no_more_prev_##]">이전</a>
 							<s_paging_rep>
@@ -377,8 +472,16 @@
 						</span>
 					</div>
 
-					<div class="area_more">
-						<a [##_next_page_##] class="link_more [##_no_more_next_##]">더보기</a>
+					<div class="area_paging area_paging_simple">
+						<div class="inner_paging">
+							<a [##_prev_page_##] class="link_prev [##_no_more_prev_##]">
+								<span class="ico_skin ico_prev"></span>이전
+							</a>
+
+							<a [##_next_page_##] class="link_next [##_no_more_next_##]">
+								다음<span class="ico_skin ico_next"></span>
+							</a>
+						</div>
 					</div>
 				</s_paging>
 
