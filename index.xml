@@ -16,8 +16,8 @@
 		<email>tistoryblog@daum.net</email>
 	</author>
 	<default>
-		<recentEntries>5</recentEntries>
-		<recentComments>5</recentComments>
+		<recentEntries>4</recentEntries>
+		<recentComments>4</recentComments>
 		<recentTrackbacks>5</recentTrackbacks>
 		<itemsOnGuestbook>10</itemsOnGuestbook>
 		<tagsInCloud>30</tagsInCloud>
