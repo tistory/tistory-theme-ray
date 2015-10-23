@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <skin>
 	<information>
-		<name>New Tistory</name>
+		<name>Ray</name>
 		<version>1.0</version>
 		<description>
-			<![CDATA[ Tistory의 새로운 스킨입니다. ]]>
+			<![CDATA[ Ray는 글읽기편한 스킨입니다. ]]>
 		</description>
 		<license>
-			<![CDATA[ MIT License]]>
+			<![CDATA[ MIT License ]]>
 		</license>
 	</information>
 	<author>
-		<name>tistory</name>
+		<name>Tistory</name>
 		<homepage>http://www.tistory.com</homepage>
 		<email>tistoryblog@daum.net</email>
 	</author>
@@ -22,7 +22,7 @@
 		<itemsOnGuestbook>10</itemsOnGuestbook>
 		<tagsInCloud>30</tagsInCloud>
 		<sortInCloud>3</sortInCloud>
-		<expandComment>0</expandComment>
+		<expandComment>1</expandComment>
 		<expandTrackback>0</expandTrackback>
 		<lengthOfRecentNotice>25</lengthOfRecentNotice>
 		<lengthOfRecentEntry>27</lengthOfRecentEntry>
