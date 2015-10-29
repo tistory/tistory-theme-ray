@@ -176,8 +176,8 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .skin_view .imageblock {width:auto !important; height:auto !important}
 .skin_view .imageblock img { max-width:100%; height:auto }
 
-.skin_view .area_view .protected_form { text-align:center; padding: 100px 0 }
-.skin_view .area_view .protected_form input { padding:6px }
+.skin_view .area_view .protected_form { text-align:center; padding: 100px 0 150px; border-bottom:1px solid #ebebeb; margin-bottom:-20px }
+.skin_view .area_view .protected_form input { -webkit-appearance: none; padding:0 15px; border: 1px solid #eee; height:38px; line-height:38px; font-size: 12px; box-sizing: border-box;}
 .skin_view .area_view .protected_form button { border-radius: 4px; font-size: 12px; line-height: 38px; background-color: #3db39e; color: #fff; font-weight: bold; padding: 0 16px }
 
 .skin_view .area_etc{overflow:hidden;min-height:29px;margin-top:20px}
