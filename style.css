@@ -163,6 +163,12 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .skin_view .area_view h2,
 .skin_view .area_view h3,
 .skin_view .area_view h4 { font-size:26px; line-height:30px; margin:52px auto 28px }
+.skin_view .area_view ul,
+.skin_view .area_view ol { margin: 0 auto 32px; padding: 0 0 0 10px; }
+.skin_view .area_view ul li,
+.skin_view .area_view ol li { margin-left:24px; margin-bottom:10px; }
+.skin_view .area_view ul li { list-style:disc }
+.skin_view .area_view ol li { list-style:decimal }
 .skin_view .area_view blockquote { padding: 10px 20px; margin: 0 auto 28px; border-left:5px solid #eee }
 .skin_view .area_view blockquote,
 .skin_view .area_view blockquote p { font-size:18px; line-height:30px }
@@ -173,8 +179,8 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .skin_view .area_view pre { background-color:#F6F7F8; margin:28px auto; padding:16px; word-wrap: break-word; font-family: Menlo,Consolas,Monaco,monospace; font-size:14px; line-height:20px}
 .skin_view .area_view iframe { max-width:100% }
 
-.skin_view .imageblock {width:auto !important; height:auto !important}
-.skin_view .imageblock img { max-width:100%; height:auto }
+.skin_view .area_view img { max-width:100%; height:auto }
+.skin_view .area_view .imageblock {width:auto !important; height:auto !important}
 
 .skin_view .area_view .protected_form { text-align:center; padding: 100px 0 150px; border-bottom:1px solid #ebebeb; margin-bottom:-20px }
 .skin_view .area_view .protected_form input { -webkit-appearance: none; padding:0 15px; border: 1px solid #eee; height:38px; line-height:38px; font-size: 12px; box-sizing: border-box;}

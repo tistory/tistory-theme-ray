@@ -4,7 +4,7 @@
 		<name>#1</name>
 		<version>1.0</version>
 		<description>
-			<![CDATA[ Ray는 글읽기편한 스킨입니다. ]]>
+			<![CDATA[ 다양한 글을 여러 기기에서 읽기 좋게 보여주는 스킨입니다. ]]>
 		</description>
 		<license>
 			<![CDATA[ MIT License ]]>
@@ -15,10 +15,15 @@
 		<homepage>http://www.tistory.com</homepage>
 		<email>tistoryblog@daum.net</email>
 	</author>
+	<contest>
+		<description>2015 반응형 스킨 공모전 기념스킨</description>
+		<preview>http://i1.daumcdn.net/cfs.tistory/static/admin/new/skin_preview_ray.png</preview>
+		<document>http://notice.tistory.com/2271</document>
+	</contest>
 	<default>
 		<recentEntries>4</recentEntries>
 		<recentComments>4</recentComments>
-		<recentTrackbacks>5</recentTrackbacks>
+		<recentTrackbacks>4</recentTrackbacks>
 		<itemsOnGuestbook>10</itemsOnGuestbook>
 		<tagsInCloud>30</tagsInCloud>
 		<sortInCloud>3</sortInCloud>
