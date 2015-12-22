@@ -65,7 +65,7 @@
 					<form action="#" method="get" class="frm_search" onsubmit="[##_search_onclick_submit_##]">
 						<fieldset>
 							<legend class="screen_out">검색하기 폼</legend>
-							<label for="tfSearch" class="ico_skin lab_search">검색하기</label>
+							<label for="[##_search_name_##]" class="ico_skin lab_search">검색하기</label>
 							<input type="text" name="[##_search_name_##]" value="[##_search_text_##]" class="tf_search">
 						</fieldset>
 					</form>
@@ -169,7 +169,6 @@
 									</span>
 								</div>
 								<div class="area_view">
-									[##_notice_rep_desc_##]
 									<form class="protected_form" onsubmit="[##_article_dissolve_##]">
 										<p>보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
 										<input type="password" id="[##_article_password_##]" name="[##_article_password_##]" value="" placeholder="비밀번호" />
