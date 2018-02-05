@@ -193,16 +193,6 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .skin_view .list_tag .desc_tag a{color:#aaa}
 .skin_view .list_tag .link_tag{font-weight:bold;font-size:12px;color:#aaa}
 .skin_view .list_tag .link_tag:hover{text-decoration:none}
-.skin_view .area_etc .list_share{float:right}
-.skin_view .list_share li{float:left;margin-top:1px}
-.skin_view .list_share .ico_skin{width:29px;height:29px;margin-right:6px}
-.skin_view .list_share .link_fb{background-position:0 -175px}
-.skin_view .list_share .link_fb:hover{background-position:0 -210px}
-.skin_view .list_share .link_kt{display:none}
-.skin_view .list_share .link_ks{background-position:0 -250px}
-.skin_view .list_share .link_ks:hover{background-position:0 -285px}
-.skin_view .list_share .link_tw{margin-right:0;background-position:0 -325px}
-.skin_view .list_share .link_tw:hover{margin-right:0;background-position:0 -360px}
 
 .skin_view .another_category {overflow:hidden;width:100%;margin:90px 0 0; border:0; padding:0}
 .skin_view .another_category h4 { float:left;width:100%;padding:0 0 7px !important;border-bottom:1px solid #eee !important;font-weight:normal; font-size:14px !important; line-height:1.5; color:#666 !important }
@@ -277,12 +267,14 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .area_reply .hiddenComment .txt_date{}
 
 /* 리스트 */
-.list_content {padding-top:35px;border-bottom:1px solid #ebebeb}
+.list_content {padding:35px 0;border-bottom:1px solid #ebebeb}
+.list_content::after { content:''; clear:both; display:block }
+.list_content .thumbnail_post { float:right; height:148px; width:148px; margin:4px 0 4px 30px }
 .list_content .link_post{display:block;overflow:hidden;text-decoration:none}
 .list_content .link_post:hover .tit_post { text-decoration: underline; color:#3db39e}
 .list_content .tit_post{display:block;font-weight:normal;font-size:28px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap}
 .list_content .txt_post{display:-webkit-box;display:-ms-flexbox;display:box;overflow:hidden;max-height:80px;margin-top:1px;font-size:16px;line-height:28px;color:#666;vertical-align:top;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:3}
-.list_content .detail_info{margin-top:16px;font-size:12px;color:#aaa; padding-bottom:35px}
+.list_content .detail_info{margin-top:16px;font-size:12px;color:#aaa;}
 .list_content .detail_info .link_cate{font-size:12px;text-decoration:none;color:#3db39e}
 
 /* 방명록 */
@@ -375,17 +367,6 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 	.skin_view .area_view p {font-size:17px;line-height:24px;color:#333}
 	.skin_view .img_view{width:100%;height:auto;margin:11px 0 6px}
 	.skin_view .area_etc{position:relative;height:auto;margin:0;}
-	.skin_view .area_etc .list_share{float:none;width:100%;text-align:center;margin-bottom:36px}
-	.skin_view .list_share li{display:inline-block;float:none}
-	.skin_view .list_share .ico_skin{width:36px;height:36px;margin:0 4px}
-	.skin_view .list_share .link_fb{background-position:0 0}
-	.skin_view .list_share .link_fb:hover{background-position:0 -40px}
-	.skin_view .list_share .link_kt{display:block;background-position:-40px 0}
-	.skin_view .list_share .link_kt:hover{background-position:-40px -40px}
-	.skin_view .list_share .link_ks{background-position:-80px 0}
-	.skin_view .list_share .link_ks:hover{background-position:-80px -40px}
-	.skin_view .list_share .link_tw{margin-right:4px;background-position:-120px 0}
-	.skin_view .list_share .link_tw:hover{margin-right:4px;background-position:-120px -40px}
 	.skin_view .area_etc .list_tag{margin-top:0;padding:0 15px;float:none;margin-bottom:22px}
 	.skin_view .list_tag .tit_tag{margin-right:3px;font-family: applesdgothicneo-ultralight; font-size:13px; float:none; display:inline}
 	.skin_view .list_tag .desc_tag{ margin:0; float:none; display:inline; font-weight:bold;font-family:applesdgothicneo-semibold; }
@@ -476,10 +457,13 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 	#tt-body-guestbook .area_head .txt_condition { display:none}
 	.area_foot{margin-top:21px}
 	/* 리스트 */
-	.list_content {max-height:113px;padding:21px 15px 0}
+	.list_content {max-height:113px;padding:21px 15px 20px}
+	.list_content .thumbnail_post,
+	.list_content .thumbnail_post img { width:76px; height:76px }
+	.list_content .thumbnail_post { margin:8px 0 8px 30px }
 	.list_content .tit_post{font-size:18px; font-family:applesdgothicneo-semibold; font-weight:bold}
 	.list_content .txt_post{max-height:37px;margin-top:2px;font-size:14px;line-height:19px;color:#6b6b6b;-webkit-line-clamp:2}
-	.list_content .detail_info{margin-top:8px;font-size:13px;color:#bbb; padding-bottom:20px}
+	.list_content .detail_info{margin-top:8px;font-size:13px;color:#bbb}
 	.list_content .detail_info .link_cate{font-size:13px}
 	.list_content .detail_info .txt_bar{margin:0 5px}
 	/* 방명록 */
@@ -488,7 +472,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 	.skin_visitor .area_reply .reply_writer{margin-top:10px}
 	.skin_visitor .area_reply .list_reply{margin-top:25px}
 
-	.skin_tag .list_tag{hidden;padding:30px 20px 90px}
+	.skin_tag .list_tag{overflow:hidden;padding:30px 20px 90px}
 
 	/* 카테고리 레이어 활성화 */
 	.layer_on { overflow:hidden }

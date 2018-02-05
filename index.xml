@@ -17,7 +17,7 @@
 	</author>
 	<contest>
 		<description>2015 반응형 스킨 공모전 기념스킨</description>
-		<preview>http://i1.daumcdn.net/cfs.tistory/static/admin/new/skin_preview_ray.png</preview>
+		<preview>//t1.daumcdn.net/tistory_admin/static/admin/new/skin_preview_ray.png</preview>
 		<document>http://notice.tistory.com/2271</document>
 	</contest>
 	<default>
@@ -28,7 +28,6 @@
 		<tagsInCloud>30</tagsInCloud>
 		<sortInCloud>3</sortInCloud>
 		<expandComment>1</expandComment>
-		<expandTrackback>0</expandTrackback>
 		<lengthOfRecentNotice>25</lengthOfRecentNotice>
 		<lengthOfRecentEntry>27</lengthOfRecentEntry>
 		<lengthOfRecentComment>30</lengthOfRecentComment>
