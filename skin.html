@@ -97,6 +97,53 @@
 
 		<div id="dkContent" class="cont_skin" role="main">
 			<div id="cMain">
+				
+				<s_cover_group>
+					<s_cover_rep>
+						<s_cover name='featured'>
+							<div class='featured'>
+								<s_cover_item>
+									<div class='featured-item'>
+										<s_cover_item_thumbnail>
+											<img class="image" src="[##_cover_item_thumbnail_##]">
+										</s_cover_item_thumbnail>
+										<strong class="title">[##_cover_item_title_##]</strong>
+										<a href="[##_cover_item_url_##]" class="action">자세히 보기</a>
+									</div>
+								</s_cover_item>
+								<button class='btn-prev'>&lt;</button>
+								<button class='btn-next'>&gt;</button>
+							</div>
+						</s_cover>
+						
+						<s_cover name='list'>
+							<div id="mArticle" class="article_skin">
+								<s_cover_item>
+									<div class="list_content">
+										<s_cover_item_thumbnail>
+											<a href="[##_cover_item_url_##]" class="thumbnail_post"><img src="//i1.daumcdn.net/thumb/C148x148/?fname=[##_cover_item_thumbnail_##]"></a>
+										</s_cover_item_thumbnail>
+										<a href="[##_cover_item_url_##]" class="link_post">
+											<strong class="tit_post">[##_cover_item_title_##]</strong>
+											<p class="txt_post">[##_cover_item_summary_##]</p>
+										</a>
+										<s_cover_item_article_info>
+											<div class="detail_info">
+												<a href="[##_cover_item_category_url_##]" class="link_cate">[##_cover_item_category_##]</a>
+												<span class="txt_bar"></span>
+												[##_cover_item_date_##]
+											</div>
+										</s_cover_item_article_info>
+									</div>
+								</s_cover_item>
+								
+								<s_cover_url>
+									<a class="btn-more" href="[##_cover_url_##]">더보기</a>
+								</s_cover_url>
+							</div>
+						</s_cover>
+					</s_cover_rep>
+				</s_cover_group>
 
 				<s_notice_rep>
 					<div id="mArticle" class="article_skin">
@@ -619,6 +666,49 @@
 <script>
 	(function($) {
 		$.Area.init();
+	})(jQuery);
+</script>
+<script>
+	(function($) {
+		var $items = $('.featured-item'),
+				$btnPrev = $('.featured .btn-prev'),
+				$btnNext = $('.featured .btn-next');
+		var current = 0;
+		
+		function show(index) {
+			$items.each(function(idx, item) {
+				if (idx == index) {
+					$(item).show()
+				} else {
+					$(item).hide()
+				}
+			})
+			current = index;
+		}
+		
+		function next() {
+			var nextIndex = current + 1;
+			if (nextIndex >= $items.length) {
+				nextIndex = 0;
+			}
+			
+			show(nextIndex);
+		}
+		
+		function prev() {
+			var prevIndex = current - 1;
+			if (prevIndex < 0) {
+				prevIndex = $item.length - 1;
+			}
+			
+			show(prevIndex);
+		}
+		
+		$btnPrev.on("click", prev);
+		$btnNext.on("click", next);
+		
+		show(current);
+		
 	})(jQuery);
 </script>
 
